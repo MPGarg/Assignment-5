@@ -32,6 +32,10 @@ This normalization works per channel. For each channel in the layer mean & varia
 
 In image (shown above) for layer N, it will have 4 mean values and 4 variance values for each channel. All yellow, red, orange & green parts of Layer 1 will get accumulated as per colour and mean/variance will be calculated.
 
+Image below shows how mean is calculated for channel:
+
+![image](https://user-images.githubusercontent.com/120099863/214910909-1bc89b4a-9cd3-4b7b-a586-7c1b777e9973.png)
+
 ### 2. Layer Normalization
 
 ![image](https://user-images.githubusercontent.com/120099863/214896159-9421d9f5-2d65-4fd5-afef-ea0135f619dd.png)
