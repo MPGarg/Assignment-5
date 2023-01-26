@@ -62,10 +62,12 @@ For image 1 calculation will cover all of these fields (2 group example):
 
 ![image](https://user-images.githubusercontent.com/120099863/214904720-0bb692c2-10fd-44d6-90bf-64c2600e0726.png)
 
-* Batch Normalization + L1 is giving best test accuracy. Layer Normalization is close to batch normalization but Group Normalization is not giving good results.
-* LN has more training accuracy and less test accuracy than BN+L1. Thus implying BN+L1 is working better in this scenario as it has more scope for improvement.
-* Training loss for BN+L1 is quite high compared to other two normalizations
-* Test loss is maximum for GN, followed by LN & lowest for BN+L1
+* Batch Normalization + L1 is giving best test accuracy. Layer Normalization is close to batch normalization. Group Normalization is not giving good results.
+* LN has more training accuracy and less test accuracy compared to BN+L1. Thus implying BN+L1 is working better in this scenario, as it has scope for improvement if pushed to more epochs.
+* Training loss for BN+L1 is quite high compared to the other two normalizations. Training loss follows a nearly similar pattern for LN & GN.
+* Test loss is maximum for GN, followed by LN & lowest for BN+L1.
+* Test loss for LN reduces faster and stabilizes. Test loss for BN+L1 reduces slower than LN & GN and still has a downward curve pointing towards more scope for improvement.
+* Training Accuracy curve is nearly the same for all of three normalizations.
 
 ## Part 4 - Graphs
 
