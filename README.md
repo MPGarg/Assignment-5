@@ -54,17 +54,34 @@ For image 1 calculation will cover all of these fields (2 group example):
 
 ## Part 3 - Findings for Normalization Techiniques
 
-Acurracy for Training & Testing for all 3 are as follows:
+* Acurracy for Training & Testing for all 3 are as follows:
 
 ![image](https://user-images.githubusercontent.com/120099863/214904720-0bb692c2-10fd-44d6-90bf-64c2600e0726.png)
 
-* Batch Normalization + L1 is giving best accuracy. Layer Normalization is close to batch normalization but Group Normalization is not giving good results.
+* Batch Normalization + L1 is giving best test accuracy. Layer Normalization is close to batch normalization but Group Normalization is not giving good results.
 * LN has more training accuracy and less test accuracy than BN+L1. Thus implying BN+L1 is working better in this scenario.
+* Training loss for BN+L1 is quite high compared to other two normalizations
+* Test loss is maximum for GN, followed by LN & lowest for BN+L1
 
+## Part 4 - Graphs
 
-
+Graphs showing Training/Test Loss/Accuracies:
 
 ![image](https://user-images.githubusercontent.com/120099863/214904574-f7498987-4d3a-41df-8a77-b1da248b570b.png)
+
+## Part 5 - Misclassified Images
+
+### Batch Normalization and L1
+
+![image](https://user-images.githubusercontent.com/120099863/214909626-77f5b491-92d5-4037-a1c7-b75d4d7b506c.png)
+
+### Layer Normalization
+
+![image](https://user-images.githubusercontent.com/120099863/214909777-099c12b6-b6cd-4e54-a31e-ccc515b35211.png)
+
+### Group Normalization
+
+![image](https://user-images.githubusercontent.com/120099863/214909921-bee741c6-b60a-45f4-a3d8-69c6c2d85bfb.png)
 
 
 
