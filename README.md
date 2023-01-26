@@ -36,12 +36,25 @@ In image (shown above) for layer N, it will have 4 mean values and 4 variance va
 
 ![image](https://user-images.githubusercontent.com/120099863/214896159-9421d9f5-2d65-4fd5-afef-ea0135f619dd.png)
 
-This normalization works per image (batch size). For each image in batch mean & variance will be calculated. All channel values for that iamge are accumulated to calculate mean & variance. 
+This normalization works per image (batch size). For each image in batch mean & variance will be calculated per layer. All channel values for that image are accumulated to calculate mean & variance.
 
 For image 1 calculation will cover all of these fields:
 
 ![image](https://user-images.githubusercontent.com/120099863/214896794-38ccc8be-89cf-4531-9fbc-ab4c179eaf58.png)
 
+### 3. Group Normalization
+
+![image](https://user-images.githubusercontent.com/120099863/214897217-78a3fb1f-2fd5-4f2e-9e6c-901762e09a54.png)
+
+This normalization works per image (batch size) but channels are split as required for the number of groups. For each image in batch mean & variance will be calculated by grouping channels (based on group number) per layer. All channel values for that image are accumulated as per their group to calculate mean & variance.
+
+For image 1 calculation will cover all of these fields (2 group example):
+
+![image](https://user-images.githubusercontent.com/120099863/214898927-fa1e8711-3e1d-41ab-a5ca-593897c1559f.png)
+
+## Part 3 - Findings for Normalization Techiniques
+
+* 
 
 
 
