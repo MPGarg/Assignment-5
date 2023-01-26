@@ -22,7 +22,7 @@ EVA8_Assigment_5.ipynb contains the main body of the code. It imports necessary 
 * display_incorrect_pred() function is used to print misclassified images for models. These images are shown in a 5x2 matrix for each model.
 * Loss (training & testing) and Accuracy (training & testing) are printed for comparing performance of normalization techniques
 
-## Part 2 - Normalizarion Techniques
+## Part 2 - Normalization Techniques
 
 ### 1. Batch Normalization
 
