@@ -72,7 +72,7 @@ class Net(nn.Module):
         if norm == 'BN':
             return nn.BatchNorm2d(channels)
         elif norm == 'LN':
-            return nn.GroupNorm(1,channels)
+            return nn.GroupNorm(1,channels) #(equivalent with LayerNorm)
         elif norm == 'GN':
             return nn.GroupNorm(2,channels) #groups=2
 
