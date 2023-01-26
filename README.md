@@ -54,7 +54,16 @@ For image 1 calculation will cover all of these fields (2 group example):
 
 ## Part 3 - Findings for Normalization Techiniques
 
-* 
+* Acurracy for Training & Testing for all 3 are as follows:
+
+![image](https://user-images.githubusercontent.com/120099863/214904720-0bb692c2-10fd-44d6-90bf-64c2600e0726.png)
+
+
+
+
+
+![image](https://user-images.githubusercontent.com/120099863/214904574-f7498987-4d3a-41df-8a77-b1da248b570b.png)
+
 
 
 
